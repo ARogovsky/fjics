@@ -292,3 +292,9 @@
     -webkit-transform: none!important;
     transform: none!important
 }
+
+#formError {
+    color: white;
+    font-family: Arial;
+    font-size: 14px
+}
