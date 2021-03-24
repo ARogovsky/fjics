@@ -271,8 +271,6 @@
             <div class="item"><img src="./src/img/1.png"></div>
             <div class="item"><img src="./src/img/2.png"></div>
             <div class="item"><img src="./src/img/4.png"></div>
-            <div class="item"><img src="./src/img/3.png"></div>
-            <div class="item"><img src="./src/img/5.png"></div>
             <div class="item"><img src="./src/img/6.png"></div>
             </div>
         </div>
@@ -405,13 +403,13 @@
                     </div>
                 </div>
                     <section>
-                        <video id="slider"  controls>
+                        <video id="slider" poster="./src//img/prev.png"  currentTime = 10  controls>
                             <source src="./src/video/EVQ2_1.mp4" type="video/mp4">
                         </video>
                         <ul class="navigation">
-                            <li onclick = "videoUrl('./src/video/EVQ2_1.mp4')" > <img src="./src/img/1.png" alt=""> </li>
-                            <li onclick = "videoUrl('./src/video/EVQ2_2.mp4')" > <img src="./src/img/2.png" alt=""> </li>
-                            <li onclick = "videoUrl('./src/video/EVQ2_3.mp4')" > <img src="./src/img/3.png" alt=""> </li>
+                            <li onclick = "videoUrl('./src/video/EVQ2_1.mp4')" > <img src="./src/img/nav1.png" alt=""> </li>
+                            <li onclick = "videoUrl('./src/video/EVQ2_2.mp4')" > <img src="./src/img/nav2.png" alt=""> </li>
+                            <li onclick = "videoUrl('./src/video/EVQ2_3.mp4')" > <img src="./src/img/nav3.png" alt=""> </li>
                         </ul>
                     </section>
 
@@ -525,6 +523,8 @@
 <!--            </div>-->
             <style>
                 video{
+                    object-fit: fill; /*to add black content at top and bottom*/
+                    object-position: 0 -14px; /* to center our image*/
                     border: none;
                 }
                 
@@ -1255,6 +1255,7 @@
 
     </script>
     <script type="text/javascript">
+
         var slideIndex1 = 1;
 showSlides1(slideIndex1);
 
